@@ -1,0 +1,21 @@
+Python 3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> import pygame, sys, random
+pygame-ce 2.5.7 (SDL 2.32.10, Python 3.14.4)
+>>> pygame.init()
+(5, 0)
+>>> WIDTH, HEIGHT = 1280, 720
+... 
+>>> FONT = pygame.font.SysFont("Consolas", int(WIDTH/20))
+>>> SCREEN = pygame.display.set_mode((WIDTH, HEIGHT))
+>>> pygame.display.set_caption("pong with powerups")
+>>> CLOCK = pygame.time.Clock()
+... 
+...  
+>>> while True:
+...      for event in pygame.event.get():
+...            if event.type == pygame.QUIT:
+...                pygame.quit()
+...                sys.exit()
+... 
+...                
